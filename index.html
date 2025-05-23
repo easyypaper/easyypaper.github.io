@@ -2,63 +2,124 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EASYY PAPER</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      color: #333;
     }
-
-    h1 {
-      font-size: 4rem;
-      color: #1d3557;
-      margin-bottom: 1rem;
+    header {
+      background-color: #2c3e50;
+      padding: 60px 20px;
+      color: white;
     }
-
-    .info {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
+    header h1 {
+      margin: 0;
+      font-size: 50px;
+      letter-spacing: 3px;
     }
-
-    .buttons a {
+    .highlight {
+      font-size: 26px;
+      margin: 20px 0;
+      color: #e67e22;
+      font-weight: bold;
+    }
+    .info-section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    .info-section h2 {
+      font-size: 24px;
+      color: #2c3e50;
+    }
+    .info-section ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: left;
+    }
+    .info-section ul li {
+      font-size: 18px;
+      margin: 10px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+    .info-section ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #27ae60;
+    }
+    .contact {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+    .social-buttons {
+      margin: 40px 0;
+    }
+    .social-buttons a {
       display: inline-block;
       margin: 10px;
-      padding: 15px 30px;
-      font-size: 1.2rem;
+      padding: 15px 25px;
+      background-color: #3498db;
       color: white;
-      background-color: #457b9d;
       text-decoration: none;
       border-radius: 8px;
-      transition: background-color 0.3s;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
     }
-
-    .buttons a:hover {
-      background-color: #1d3557;
+    .social-buttons a:hover {
+      background-color: #2980b9;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px 10px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <h1>EASYY PAPER</h1>
-  <div class="info">
-    <p>📍 Adresse: Musterstraße 12, 12345 Berlin, Deutschland</p>
-    <p>📞 Telefon: <a href="tel:+491234567890">+49 123 4567890</a></p>
-    <p>📧 E-Mail: <a href="mailto:info@easyypaper.de">info@easyypaper.de</a></p>
+
+  <header>
+    <h1>EASYY PAPER</h1>
+    <div class="highlight">PAPIEREKRAM? EASY MIT UNS</div>
+  </header>
+
+  <div class="info-section">
+    <h2>Der einfache Weg durch den deutschen Papierkram</h2>
+    <ul>
+      <li>Umfassende rechtliche Beratung</li>
+      <li>Ausfüllen von Briefen & E-Mails an Behörden</li>
+      <li>Unterstützung bei allen behördlichen Angelegenheiten</li>
+      <li>Hilfe bei Wohnungssuche und Mietverträgen</li>
+    </ul>
+
+    <div class="contact">
+      <p><strong>Adresse:</strong> Deutschland – Niedersachsen – Oldenburg</p>
+      <p><strong>Telefon:</strong> <a href="tel:+49123456789">+49 123 456789</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@easyypaper.de">info@easyypaper.de</a></p>
+    </div>
+
+    <div class="social-buttons">
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+      <a href="https://wa.me/49123456789" target="_blank">WhatsApp</a>
+      <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
+    </div>
   </div>
-  <div class="buttons">
-    <a href="https://facebook.com/easyypaper" target="_blank">Facebook</a>
-    <a href="https://instagram.com/easyypaper" target="_blank">Instagram</a>
-    <a href="https://wa.me/491234567890" target="_blank">WhatsApp</a>
-    <a href="https://easyypaper.de" target="_blank">Website</a>
-  </div>
+
+  <footer>
+    &copy; 2025 EASYY PAPER. Alle Rechte vorbehalten.
+  </footer>
+
 </body>
 </html>
