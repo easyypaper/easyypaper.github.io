@@ -2,105 +2,84 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EasyyPaper</title>
+  <!-- تضمين مكتبة Font Awesome للأيقونات -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
   <style>
     body {
+      background-color: #f0f0f0;
       font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
-      color: #333;
       text-align: center;
-      padding: 30px;
-      margin: 0;
+      padding: 40px;
     }
-
     h1 {
-      color: #2c3e50;
-    }
-
-    .description {
-      font-size: 1.2em;
+      color: #333;
       margin-bottom: 20px;
     }
-
-    .services {
-      text-align: left;
-      max-width: 500px;
-      margin: 0 auto 30px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .info {
+      font-size: 18px;
+      margin: 10px 0;
     }
-
-    .contact {
-      margin: 30px auto;
-      line-height: 1.8;
-    }
-
-    .social-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .social-buttons a {
+    .info a {
+      color: #0066cc;
       text-decoration: none;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background 0.3s;
     }
-
-    .facebook { background: #3b5998; }
-    .tiktok { background: #000000; }
-    .instagram { background: #e4405f; }
-    .youtube { background: #ff0000; }
-
-    .social-buttons a:hover {
-      opacity: 0.85;
+    .info a:hover {
+      text-decoration: underline;
     }
-
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #777;
+    .button-container {
+      margin: 30px 0;
+    }
+    .social-button {
+      display: inline-block;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      padding: 15px 25px;
+      margin: 10px;
+      border-radius: 8px;
+      font-size: 20px;
+      transition: background-color 0.3s;
+    }
+    .social-button i {
+      margin-right: 8px;
+    }
+    .social-button:hover {
+      background-color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>EasyyPaper</h1>
-  <p class="description">Der einfache Weg durch den deutschen Papierkram</p>
+  <h1>Der einfache Weg durch den deutschen Papierkram</h1>
 
-  <div class="services">
-    <h3>Unsere Leistungen:</h3>
-    <ul>
-      <li>• Umfassende rechtliche Beratung</li>
-      <li>• Ausfüllen von Briefen & E-Mails an Behörden</li>
-      <li>• Unterstützung bei allen behördlichen Angelegenheiten</li>
-      <li>• Hilfe bei Wohnungssuche und Mietverträgen</li>
-    </ul>
-    <p><strong>Einfach. Schnell. Verständlich.</strong></p>
+  <p class="info"><strong>Unsere Leistungen:</strong></p>
+  <p class="info">• Umfassende rechtliche Beratung</p>
+  <p class="info">• Ausfüllen von Briefen & E-Mails an Behörden</p>
+  <p class="info">• Unterstützung bei allen behördlichen Angelegenheiten</p>
+  <p class="info">• Hilfe bei Wohnungssuche und Mietverträgen</p>
+
+  <div class="button-container">
+    <a href="https://www.facebook.com/share/1C5VwdaVst/?mibextid=wwXIfr" class="social-button">
+      <i class="fab fa-facebook-f"></i> Facebook
+    </a>
+    <a href="https://www.instagram.com/easyypaper?igsh=ZXA5Nnd3MTJtNTM2" class="social-button">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://www.tiktok.com/@easyy.paper?_t=ZN-8wU2Ed1D338&_r=1" class="social-button">
+      <i class="fab fa-tiktok"></i> TikTok
+    </a>
+    <a href="https://youtube.com/@easyypaper?si=TyGjDbWt9A1SHMPT" class="social-button">
+      <i class="fab fa-youtube"></i> YouTube
+    </a>
   </div>
 
-  <div class="social-buttons">
-    <a href="https://www.facebook.com/share/1C5VwdaVst/?mibextid=wwXIfr" class="facebook" target="_blank">Facebook</a>
-    <a href="https://www.tiktok.com/@easyy.paper?_t=ZN-8wU2Ed1D338&_r=1" class="tiktok" target="_blank">TikTok</a>
-    <a href="https://www.instagram.com/easyypaper?igsh=ZXA5Nnd3MTJtNTM2" class="instagram" target="_blank">Instagram</a>
-    <a href="https://youtube.com/@easyypaper?si=TyGjDbWt9A1SHMPT" class="youtube" target="_blank">YouTube</a>
-  </div>
-
-  <div class="contact">
-    <p>📞 +49 174 7200623</p>
-    <p>✉️ easyypaper@gmail.com</p>
-    <p>🌐 www.easyypaper.de | www.easyypaper.eu</p>
-    <p>📍 Deutschland - Niedersachsen - Oldenburg</p>
-  </div>
-
-  <footer>
-    &copy; 2025 EasyyPaper. Alle Rechte vorbehalten.
-  </footer>
+  <p class="info"><strong>Telefon:</strong> <a href="tel:+491747200623">+49 174 7200623</a></p>
+  <p class="info"><strong>E-Mail:</strong> <a href="mailto:easyypaper@gmail.com">easyypaper@gmail.com</a></p>
+  <p class="info"><strong>Webseite:</strong> <a href="https://www.easyypaper.de">www.easyypaper.de</a> | <a href="https://www.easyypaper.eu">www.easyypaper.eu</a></p>
+  <p class="info"><strong>Adresse:</strong> Deutschland - Niedersachsen - Oldenburg</p>
 </body>
 </html>
